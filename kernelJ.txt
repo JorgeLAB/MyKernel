@@ -15,7 +15,7 @@
 
 *https://asdf-vm.com/#/core-manage-asdf-vm
 
-*https://docs.mongodb.com/manual/reference/operator/
+*https://docs.mongodb.com/manual/reference/operat>or/
 
 *https://github.com/thoughtbot/shoulda-matchers
 
@@ -70,6 +70,10 @@ sudo apt-get install libmysqlclient-dev                                      => 
 
 
 sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compiler     => ao empregar o bootstrap pelo node temos de compilar o código osx-ssl-certs
+
+------------------------ >Crontab Mac -----------------------------------
+
+
 
 ------------------------ >Docker ------------------------------------
 
@@ -554,7 +558,7 @@ echo $DATABASE_URL                                    => Irá motrar o caminho d
 
 -------------------- >Mac -----------------------------
 
-
+command + options + D - Ocultar a dock 
 
 
 
@@ -1683,6 +1687,8 @@ seed.rb > Product.delete_all                                                    
 bin/rails db:seeds                                                                                            => To populate your products table with test data, run the following command 
 
 app/assets/stylesheets/scaffold.scss                                                                          => Podemos estar mudando o estilo de um view 
+
+---- >Rails:migrate
 
 rails generate migration add_novaColuna_tabela                                                                => gera uma nova coluna, depois disso temos de ir ao migration e adicionar  add_column  :produto, :descricao, :text ( Veja na Documentação do ActiveRecord )
 rails g migration AddColumnsToUser col1:integer col2:integer .. etc.                                          => gerar mais de uma coluna
@@ -3161,6 +3167,9 @@ CONTROL + 0      => Abre o menu com folders e files permitindo a seleção.
 
 Control + [ ou ] => Podemos pular as linhas por linhas vazias.
 
+option + tab => Movimentar entre tabs do sublime         ** Tentei baixar o package chamado MoveTab porém não rodei a ainda é importante para se movimentar entre projetos. https://github.com/SublimeText/MoveTab
+
+
 ------------------------- >Terminal - Linux  -------------------------------------
 
 >> https://canaltech.com.br/linux/entendendo-a-estrutura-de-diretorios-do-linux/
@@ -3378,6 +3387,9 @@ sudo ufw app list                                       => O comando ufw é de a
 
 alias custom_bash="subl ~/.zshrc"                       => alias para customizar o zshell
 alias go_to_main="cd ~/Documents"
+
+sudo lsof -t -i PORT | xargs kill -9                    => Uma forma dar down em portas que estão abertas sem ser pelo PID direto
+
 
 ------------------------------------------Tilix - Terminal Emulator   -------------------------------------------------------------
 
